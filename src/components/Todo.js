@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import css from './todo.css';
 
 
 function Todo() {
@@ -27,7 +28,7 @@ function Todo() {
   return (
     <div className='container'>
       <div className='header'>Todo list</div>
-      <input type="text" placeholder="add activity" value={activity} onChange={(e) => setActivity(e.target.value)} />
+      <input className='input-feild' type="text" placeholder="add activity" value={activity} onChange={(e) => setActivity(e.target.value)} />
       <button onClick={addActivity}>Add</button>
       <p className='list-heading'>here is your list</p>
       {listData != [] && listData.map((data, inx) => {
