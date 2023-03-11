@@ -28,7 +28,7 @@ function Todo() {
   return (
     <div className='container'>
       <div className='header'>Todo list</div>
-      <input className='input-feild' type="text" placeholder="add activity" value={activity} onChange={(e) => setActivity(e.target.value)} />
+      <input className='input-feild' type="text" placeholder="Add Activity To Your List" value={activity} onChange={(e) => setActivity(e.target.value)} />
       <button className = 'btn'onClick={addActivity}>Add</button>
       <p className='list-heading'>Here is your list</p>
       {listData != [] && listData.map((data, inx) => {
@@ -36,9 +36,12 @@ function Todo() {
           <>
             <p key={inx}>
               
-              <div className='listdata'>{data}</div>
-                <div className = "" ><button onClick={()=> removeActivity(inx)}>Remove</button>
-              </div>
+              <div className='box'>
+                <div className='listdata'>{data}</div>
+                <div ><button className='btn-d' onClick={() => removeActivity(inx)}>Remove</button></div></div>
+    
+                
+              
 
 
             </p>

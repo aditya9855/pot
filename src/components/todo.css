@@ -9,10 +9,10 @@
     background-color: rgb(21, 12, 15);
 }
 .input-feild{
-    border-radius: 15px;
-    width: 85%;
+    border-radius: 40px;
+    width: 80%;
     
-    height: 20px;
+    height: 30px;
     margin-left: 15px;
     margin-right: 10px;
     border-color: rgb(134, 80, 31);
@@ -21,26 +21,51 @@
 }
 
 .btn{
-    width: 90px;
-    font-size: 17px;
-    
-    border-radius: 20px;
-    margin-top: 2px;
+    width: 110px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 30px;
+    margin-top: 6px;
     margin-left: 5px;
     color:rgb(134, 80, 31);
     cursor: pointer;
     background-color: rgb(184, 171, 176);
 }
 .list-heading{
-    font-size: 30px;
+    font-size: 40px;
+    color:rgb(134, 80, 31) ;
     text-align: center;
+    font-weight: 400;
  
 }
 .listdata{
-    background-color: aqua;
-    width: 85%;
-   
-    height: 20px;
-    margin-left: 15px;
+    background-color: rgb(21, 11, 2);
+    width: 30%;
+    padding-left: 30px;
+    color: rgb(176, 110, 48);
+    height: 30px;
+    border-radius: 30px;
+    padding-top: 6px;
+    margin-left: 300px;
     margin-right: 10px;
+}
+/* .box{
+    border: 2px solid black;
+    justify-content: center;
+} */
+.btn-d{
+    width: 90px;
+    font-size: 17px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 20%;
+    color:rgb(134, 80, 31);
+    cursor: pointer;
+    background-color: rgb(184, 171, 176);
+}
+.box{
+    display: flex;
+    align-items: center;
+    margin:auto;
 }
