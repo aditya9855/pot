@@ -29,12 +29,13 @@ function Todo() {
     <div className='container'>
       <div className='header'>Todo list</div>
       <input className='input-feild' type="text" placeholder="add activity" value={activity} onChange={(e) => setActivity(e.target.value)} />
-      <button onClick={addActivity}>Add</button>
-      <p className='list-heading'>here is your list</p>
+      <button className = 'btn'onClick={addActivity}>Add</button>
+      <p className='list-heading'>Here is your list</p>
       {listData != [] && listData.map((data, inx) => {
         return (
           <>
             <p key={inx}>
+              
               <div className='listdata'>{data}</div>
                 <div className = "" ><button onClick={()=> removeActivity(inx)}>Remove</button>
               </div>
