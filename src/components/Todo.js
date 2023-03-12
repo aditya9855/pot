@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import css from './todo.css';
 
+const getData = () => {
+  let dataa = localStorage.getItem('list');
+  if(dataa){
+    return JSON.parse(localStorage.getItem('list'));
+  }else{
+     return [];
+  }
+}
 
 function Todo() {
   const [activity, setActivity] = useState("")
-  const [listData, setListData] = useState([])
+  const [listData, setListData] = useState(getData());
   const addActivity = () => {
     // setListData([...listData,activity])
     setListData((listData) => {
@@ -24,6 +32,9 @@ function Todo() {
     setListData(updatedListData);
 
   }
+  useEffect(()=>{
+    localStorage.setItem('list',JSON.stringify(listData))
+  },[listData])
   // 
   return (
     <div className='container'>
